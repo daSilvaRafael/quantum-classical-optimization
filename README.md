@@ -1,18 +1,17 @@
-# Solving QUBO problems on real quantum computers
+# Benchmarking quantum-classical algorithms for quadratic unconstrained binary optimization
 
-Combinatorial problems, particularly NP problems, present significant challenges for classical computation. Quantum
-computers have the potential to solve NP problems more efficiently. In these notebooks, we use real quantum computers to find the optimal solutions of quadratic unconstrained binary optimization (QUBO) problems. We present the computational results for a QUBO problem with 3 variables, and its extension to 6, 12 and 144 variables. Our findings indicate that the variational quantum eigensolver (VQE) algorithm with the constrained optimization by linear approximation (COBYLA) subroutine can yield optimal, less accurate, or unsatisfactory solutions depending on the problem instance. For all the considered instances of the QUBO problem, an optimal solution was successfully obtained via quantum annealing or hybrid solvers.
+Quadratic unconstrained binary optimization (QUBO) problems present significant challenges for classical computation. Quantum computing offers a promising alternative approach. In this study, we evaluate the performance of noisy quantum computers in solving an asset selection problem formulated as a QUBO. We benchmark the Variational Quantum Eigensolver (VQE) with COBYLA optimization, quantum annealing, and a hybrid quantum-classical solver across systematically scaled instances of the QUBO problem, from small-scale instances of 3, 6, and 12 variables and a large-scale of 144 variables.
 
 
 ## Accounts
 
-The reader needs to create an account on the following clouds:
+The reader needs to create a free account on the following clouds:
 
  [D-Wave Leap](https://cloud.dwavesys.com/leap/login?next=/leap/)
 
- [Quafu](https://scq-cloud.github.io/tutorial.html#set-up-your-quafu-account)
+ [Quafu-SQC](https://quarkstudio.readthedocs.io/en/latest/#1-introduction)
 
-and save the api token on the corresponding notebook in order to run them. For D-Wave's API token setup see [_Set Up Your Environment_](https://docs.dwavequantum.com/en/latest/ocean/leap_authorization.html).
+and save the api token on the corresponding notebook in order to run them.
 
 
 ## Installation
